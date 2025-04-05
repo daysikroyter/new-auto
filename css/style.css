@@ -107,6 +107,10 @@ body {
   .menu__link:hover::before {
     width: 100%;
   }
+
+  .header.header-default .menu__link:hover::before {
+    background-color: #111518;
+  }
 }
 
 .menu__btn {
@@ -270,21 +274,20 @@ body {
   font-weight: 700;
 }
 
-.product__top,
 .about__top,
 .contacts__top {
   height: 550px;
   background-color: #111518;
 }
 
-.product__inner,
 .about__inner,
 .contacts__inner {
   margin-top: -400px;
 }
 
 .contacts__title,
-.about__title {
+.about__title,
+.product__title {
   text-align: center;
   color: #fff;
   font-size: 64px;
@@ -293,138 +296,128 @@ body {
   position: relative;
 }
 
-.product__title span {
-  color: #fc7926;
-  white-space: nowrap;
-}
-
-.product__box {
-  max-width: 1000px;
-  margin: 0 auto;
-}
-
-.product__container {
-  max-width: 1000px;
-  margin: 0 auto 15px;
-  border-radius: 10px;
-  overflow: hidden;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
-}
-
-.product__container img {
-  height: 600px;
-  width: 100%;
-  object-fit: cover;
-}
-
-.tabs-content {
-  display: none;
-}
-
-.tabs-content.tabs-content--active {
-  display: block;
-}
-
-.product__tabs {
-  display: flex;
-  gap: 10px;
-  margin-bottom: 30px;
-}
-
-.product__tab {
-  width: 120px;
-  height: 80px;
-  border-radius: 10px;
-  overflow: hidden;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  position: relative;
-}
-
-.product__tab::before {
-  content: "";
-  position: absolute;
-  display: block;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.8);
-  transition: background 0.5s ease;
-}
-
-@media (hover: hover) {
-  .product__tab:hover::before {
-    background: linear-gradient(180deg, #c8a06c00, #fc7926);
-  }
-}
-
-.product__tab.tab--active::before {
-  background: linear-gradient(180deg, #c8a06c00, #fc7926);
-}
-
-.product__tab img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.product__text {
+.product__title {
+  text-align: left;
+  font-size: 36px;
   margin-bottom: 15px;
 }
 
-.product__elements {
-  background-color: #4f4f4f;
-  color: #fff;
-  border-radius: 10px;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  padding: 30px;
-  margin-top: 30px;
-  gap: 20px;
-  margin-bottom: 20px;
-}
-
-.product__element {
+.product__inner {
   display: flex;
-  gap: 5px;
-  flex-wrap: wrap;
-}
-
-.product__element dd {
-  color: #a3a2a2;
-}
-
-.product__link {
-  max-width: 300px;
-  width: 100%;
-  font-weight: 700;
-  border-radius: 20px;
-  padding: 15px;
-  color: #fff;
-  background-color: #fc7926;
-  text-align: center;
+  justify-content: space-between;
+  gap: 30px;
   margin-bottom: 30px;
 }
 
+.product__swiper {
+  height: 500px;
+  border-radius: 20px;
+  max-width: 1000px;
+  width: 100%;
+}
+
+.swiper.product__swiper {
+  margin: 0;
+}
+
+.swiper-pagination-vertical.swiper-pagination-bullets,
+.swiper-vertical > .swiper-pagination-bullets {
+  left: 10px;
+  right: auto;
+}
+
+.product__img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.product__box {
+  max-width: 370px;
+  width: 100%;
+}
+
+.product__text:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.product__list {
+  background-color: #4f4f4f;
+  color: #fff;
+  border-radius: 20px;
+  padding: 20px;
+  margin-bottom: 15px;
+  font-size: 16px;
+}
+
+.product__item {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.product__item:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.product__item::after,
+.product__price::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 1px;
+  left: 0;
+  right: 0;
+  bottom: 5px;
+  z-index: 1;
+  border-bottom: 1px dashed rgba(255, 255, 255, 0.1);
+}
+
+.product__item dd {
+  text-align: right;
+  color: #a3a2a2;
+  padding-left: 5px;
+  background-color: #4f4f4f;
+  position: relative;
+  z-index: 2;
+}
+
+.product__item dt {
+  background-color: #4f4f4f;
+  position: relative;
+  z-index: 2;
+  padding-right: 5px;
+}
+
 .product__price {
-  margin-bottom: 5px;
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  font-weight: 700;
+  font-size: 24px;
+  position: relative;
+}
+
+.product__price::after {
+  border-bottom: 1px dashed rgb(51 51 51 / 16%);
 }
 
 .product__price span {
-  font-weight: 900;
-  color: #fc7926;
+  padding-left: 5px;
+  background-color: #efefef;
+  position: relative;
+  z-index: 2;
 }
 
-.product__next {
-  font-size: 28px;
-  font-weight: 700;
-  margin-bottom: 75px;
-}
-
-.product__next a {
-  color: #fc7926;
-  text-decoration: underline;
+.product__price span:first-child {
+  padding-left: 0;
+  padding-right: 5px;
 }
 
 .about,
-.contacts {
+.contacts,
+.product {
   padding: 0 0 75px;
 }
 
@@ -638,8 +631,29 @@ body {
   }
 
   .about,
-  .contacts {
+  .contacts,
+  .product {
     padding-bottom: 50px;
+  }
+
+  .product__inner {
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 15px;
+  }
+
+  .product__title {
+    font-size: 32px;
+  }
+
+  .product__box {
+    max-width: 100%;
+  }
+
+  .swiper.product__swiper {
+    width: calc(100% + 30px);
+    margin: 0 -15px;
+    border-radius: 0;
   }
 }
 
@@ -659,7 +673,8 @@ body {
   }
 
   .contacts__header,
-  .about__header {
+  .about__header,
+  .product__swiper {
     height: 400px;
     margin-bottom: 25px;
   }
@@ -766,7 +781,8 @@ body {
   }
 
   .contacts__header,
-  .about__header {
+  .about__header,
+  .product__swiper {
     height: 350px;
   }
 
@@ -785,12 +801,9 @@ body {
     font-size: 20px;
   }
 
-  .about__title {
-    font-size: 32px;
-  }
-
   .contacts__header,
-  .about__header {
+  .about__header,
+  .product__swiper {
     height: 300px;
   }
 
@@ -802,26 +815,30 @@ body {
 
 @media (max-width: 480px) {
   .contacts__header,
-  .about__header {
+  .about__header,
+  .product__swiper {
     height: 250px;
   }
 }
 
 @media (max-width: 430px) {
   .contacts__header,
-  .about__header {
+  .about__header,
+  .product__swiper {
     height: 200px;
   }
 
   .about__title,
-  .contacts__title {
+  .contacts__title,
+  .product__title {
     font-size: 32px;
   }
 }
 
 @media (max-width: 370px) {
   .contacts__header,
-  .about__header {
+  .about__header,
+  .product__swiper {
     height: 150px;
   }
 }

@@ -97,3 +97,12 @@ const swiper = new Swiper(".hero__swiper", {
     disableOnInteraction: false,
   },
 });
+
+const productSlider = new Swiper(".product__swiper", {
+  direction: "vertical",
+  loop: true,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+});

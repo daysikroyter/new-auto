@@ -433,6 +433,7 @@ body {
   border-radius: 20px;
   width: 100%;
   object-fit: cover;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 .about__list {
@@ -481,6 +482,7 @@ body {
   color: #fff;
   position: relative;
   overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 .contacts__header::before,
@@ -578,8 +580,9 @@ body {
 }
 
 @media (max-width: 1430px) {
-  .contacts__header, .about__header {
-    margin: 0 -15px 75px;
+  .contacts__header,
+  .about__header {
+    margin: 0 -15px 50px;
     border-radius: 0;
   }
 }

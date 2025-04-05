@@ -11,6 +11,7 @@ const McBar1 = McButton.querySelector("b:nth-child(1)");
 const McBar2 = McButton.querySelector("b:nth-child(2)");
 const McBar3 = McButton.querySelector("b:nth-child(3)");
 const menu = document.querySelector(".menu__list");
+const menuBtn = document.querySelector('.menu__btn');
 const body = document.querySelector("body");
 
 let isActive = false;

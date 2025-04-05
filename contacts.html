@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <header class="header">
+    <header class="header header-default">
       <div class="container">
         <nav class="menu">
           <a class="logo" href="index.html">
@@ -42,59 +42,58 @@
     </header>
     <main class="main">
       <section class="contacts">
-        <div class="contacts__top"></div>
-        <div class="contacts__inner">
-          <div class="container">
-            <div class="contacts__box">
-              <h1 class="contacts__title">Контакты</h1>
-              <img
-                class="contacts__img"
-                src="images/contact.png"
-                alt="contact"
-              />
-              <div class="contacts__content">
-                <div class="contacts__info">
-                  <p class="contacts__text">
-                    Мы всегда на связи и готовы помочь вам с выбором автомобиля, консультацией или оформлением сделки. Если у вас возникли вопросы — свяжитесь с нами любым удобным способом:
-                  </p>
-                  <ul class="contacts__list">
-                    <li class="contacts__item">
-                      <a
-                        class="contacts__link contacts__link--phone"
-                        href="tel:+37362042038"
-                        >+373 (62) 042 038</a
-                      >
-                    </li>
-                    <li class="contacts__item">
-                      <a
-                        class="contacts__link contacts__link--email"
-                        href="mailto:nubchenko@gmail.com"
-                        >nubchenko@gmail.com</a
-                      >
-                    </li>
-                  </ul>
-                </div>
-                <form class="contacts__form">
-                  <strong class="contacts__form-title">Оставить заявку</strong>
-                  <input class="contacts__input" type="text" placeholder="Имя" />
-                  <input
-                    class="contacts__input"
-                    type="email"
-                    placeholder="Email:"
-                  />
-                  <input
-                    class="contacts__input"
-                    type="tel"
-                    placeholder="Номер телефона:"
-                  />
-                  <textarea
-                    class="contacts__textarea"
-                    placeholder="Доп. информация:"
-                  ></textarea>
-                  <button class="contacts__btn" type="submit">Отправить</button>
-                </form>
-              </div>
+        <div class="container-fluid">
+          <div
+            class="contacts__header"
+            style="background-image: url('images/contact.png')"
+          >
+            <h1 class="contacts__title">Контакты</h1>
+          </div>
+        </div>
+        <div class="container">
+          <div class="contacts__content">
+            <div class="contacts__info">
+              <p class="contacts__text">
+                Мы всегда на связи и готовы помочь вам с выбором автомобиля,
+                консультацией или оформлением сделки. Если у вас возникли
+                вопросы — свяжитесь с нами любым удобным способом:
+              </p>
+              <ul class="contacts__list">
+                <li class="contacts__item">
+                  <a
+                    class="contacts__link contacts__link--phone"
+                    href="tel:+37362042038"
+                    >+373 (62) 042 038</a
+                  >
+                </li>
+                <li class="contacts__item">
+                  <a
+                    class="contacts__link contacts__link--email"
+                    href="mailto:nubchenko@gmail.com"
+                    >nubchenko@gmail.com</a
+                  >
+                </li>
+              </ul>
             </div>
+            <form class="contacts__form">
+              <strong class="contacts__form-title">Оставить заявку</strong>
+              <input class="contacts__input" type="text" placeholder="Имя" />
+              <input
+                class="contacts__input"
+                type="email"
+                placeholder="Email:"
+              />
+              <input
+                class="contacts__input"
+                type="tel"
+                placeholder="Номер телефона:"
+              />
+              <textarea
+                class="contacts__textarea"
+                placeholder="Доп. информация:"
+              ></textarea>
+              <button class="contacts__btn" type="submit">Отправить</button>
+            </form>
           </div>
         </div>
       </section>

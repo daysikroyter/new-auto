@@ -577,6 +577,13 @@ body {
   color: #fff;
 }
 
+@media (max-width: 1430px) {
+  .contacts__header, .about__header {
+    margin: 0 -15px 75px;
+    border-radius: 0;
+  }
+}
+
 @media (max-width: 1200px) {
   .car-card__bottom-item:nth-child(3),
   .car-card__bottom-item:last-child {

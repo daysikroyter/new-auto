@@ -1,28 +1,3 @@
-document.querySelectorAll(".tab").forEach((tab) => {
-  tab.addEventListener("click", function (e) {
-    e.preventDefault();
-
-    document.querySelector(".tab--active")?.classList.remove("tab--active");
-    this.classList.add("tab--active");
-
-    document
-      .querySelector(".tabs-content--active")
-      ?.classList.remove("tabs-content--active");
-    const targetId = this.getAttribute("href").substring(1);
-    document.getElementById(targetId)?.classList.add("tabs-content--active");
-  });
-});
-
-const swiper = new Swiper(".hero__swiper", {
-  slidesPerView: 1,
-  effect: "fade",
-  loop: true,
-  autoplay: {
-    delay: 2500,
-    disableOnInteraction: false,
-  }
-});
-
 function fixMobileVh() {
   const vh = window.innerHeight * 0.01;
   document.documentElement.style.setProperty("--vh", `${vh}px`);
@@ -110,4 +85,14 @@ McButton.addEventListener("click", () => {
       });
     }, 800);
   }
+});
+
+const swiper = new Swiper(".hero__swiper", {
+  slidesPerView: 1,
+  effect: "fade",
+  loop: true,
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
 });

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cars</title>
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <nav class="menu">
+          <a class="logo" href="index.html">
+            <img class="logo__img" src="images/logo.png" alt="logo" />
+          </a>
+          <ul class="menu__list">
+            <li class="menu__item">
+              <a class="menu__link" href="index.html">Главная</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="about.html">О нас</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="contacts.html">Контакты</a>
+            </li>
+          </ul>
+          <a class="menu__btn" data="hamburger-menu">
+            <b></b>
+            <b></b>
+            <b></b>
+          </a>
+        </nav>
+      </div>
+    </header>
+    <main class="main">
+      <section class="contacts">
+        <div class="contacts__top"></div>
+        <div class="contacts__inner">
+          <div class="container">
+            <div class="contacts__box">
+              <h1 class="contacts__title">Контакты</h1>
+              <img
+                class="contacts__img"
+                src="images/contact.png"
+                alt="contact"
+              />
+              <div class="contacts__content">
+                <div class="contacts__info">
+                  <p class="contacts__text">
+                    Мы всегда на связи и готовы помочь вам с выбором автомобиля, консультацией или оформлением сделки. Если у вас возникли вопросы — свяжитесь с нами любым удобным способом:
+                  </p>
+                  <ul class="contacts__list">
+                    <li class="contacts__item">
+                      <a
+                        class="contacts__link contacts__link--phone"
+                        href="tel:+37362042038"
+                        >+373 (62) 042 038</a
+                      >
+                    </li>
+                    <li class="contacts__item">
+                      <a
+                        class="contacts__link contacts__link--email"
+                        href="mailto:nubchenko@gmail.com"
+                        >nubchenko@gmail.com</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+                <form class="contacts__form">
+                  <strong class="contacts__form-title">Оставить заявку</strong>
+                  <input class="contacts__input" type="text" placeholder="Имя" />
+                  <input
+                    class="contacts__input"
+                    type="email"
+                    placeholder="Email:"
+                  />
+                  <input
+                    class="contacts__input"
+                    type="tel"
+                    placeholder="Номер телефона:"
+                  />
+                  <textarea
+                    class="contacts__textarea"
+                    placeholder="Доп. информация:"
+                  ></textarea>
+                  <button class="contacts__btn" type="submit">Отправить</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <nav class="footer__nav">
+          <a class="logo" href="index.html">
+            <img class="logo__img" src="images/logo.png" alt="logo" />
+          </a>
+          <a class="footer__phone" href="tel:+37362042038">+373 (62) 042 038</a>
+        </nav>
+      </div>
+    </footer>
+    <script src="js/main.js"></script>
+  </body>
+</html>

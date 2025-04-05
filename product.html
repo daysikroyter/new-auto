@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cars</title>
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <nav class="menu">
+          <a class="logo" href="index.html">
+            <img class="logo__img" src="images/logo.png" alt="logo" />
+          </a>
+          <ul class="menu__list">
+            <li class="menu__item">
+              <a class="menu__link" href="index.html">Главная</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="about.html">О нас</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="contacts.html">Контакты</a>
+            </li>
+          </ul>
+          <a class="menu__btn" data="hamburger-menu">
+            <b></b>
+            <b></b>
+            <b></b>
+          </a>
+        </nav>
+      </div>
+    </header>
+    <main class="main">
+      <section class="product">
+        <div class="product__top"></div>
+        <div class="container">
+          <div class="product__inner">
+            <h1 class="product__title">Audi A8 - <span>30 000$</span></h1>
+            <div class="product__box">
+              <ul class="tabs__container product__container">
+                <li
+                  id="product-tab-1"
+                  class="product__comp tabs-content tabs-content--active"
+                >
+                  <img src="images/cars/audi.jpg" alt="" />
+                </li>
+                <li id="product-tab-2" class="product__comp tabs-content">
+                  <img src="images/cars/audi-2.jpg" alt="" />
+                </li>
+                <li id="product-tab-3" class="product__comp tabs-content">
+                  <img src="images/cars/audi-3.webp" alt="" />
+                </li>
+                <li id="product-tab-4" class="product__comp tabs-content">
+                  <img src="images/cars/audi-4.avif" alt="" />
+                </li>
+                <li id="product-tab-5" class="product__comp tabs-content">
+                  <img src="images/cars/audi-5.webp" alt="" />
+                </li>
+              </ul>
+              <ul class="product__tabs tabs">
+                <li class="product__tab-item">
+                  <a class="product__tab tab tab--active" href="#product-tab-1"
+                    ><img src="images/cars/audi.jpg" alt=""
+                  /></a>
+                </li>
+                <li class="product__tab-item">
+                  <a class="product__tab tab" href="#product-tab-2">
+                    <img src="images/cars/audi-2.jpg" alt="" />
+                  </a>
+                </li>
+                <li class="product__tab-item">
+                  <a class="product__tab tab" href="#product-tab-3">
+                    <img src="images/cars/audi-3.webp" alt="" />
+                  </a>
+                </li>
+                <li class="product__tab-item">
+                  <a class="product__tab tab" href="#product-tab-4">
+                    <img src="images/cars/audi-4.avif" alt="" />
+                  </a>
+                </li>
+                <li class="product__tab-item">
+                  <a class="product__tab tab" href="#product-tab-5">
+                    <img src="images/cars/audi-5.webp" alt="" />
+                  </a>
+                </li>
+              </ul>
+              <p class="product__text">
+                Audi A8 – это флагманский седан премиум-класса, сочетающий
+                элегантный дизайн, передовые технологии и мощные двигатели.
+              </p>
+              <p class="product__text">
+                Автомобиль оснащен интеллектуальной системой полного привода
+                quattro, пневматической подвеской и инновационными ассистентами
+                водителя.
+              </p>
+              <p class="product__text">
+                В салоне премиальные материалы, мультимедийная система MMI с
+                сенсорными дисплеями и высокий уровень комфорта для всех
+                пассажиров.
+              </p>
+              <dl class="product__elements">
+                <div class="product__element">
+                  <dt>Модель:</dt>
+                  <dd>Audi A8</dd>
+                </div>
+                <div class="product__element">
+                  <dt>Кузов:</dt>
+                  <dd>Седан</dd>
+                </div>
+                <div class="product__element">
+                  <dt>Двигатель:</dt>
+                  <dd>3.0 TFSI / 4.0 TFSI / 6.0 W12</dd>
+                </div>
+                <div class="product__element">
+                  <dt>Привод:</dt>
+                  <dd>Полный (quattro)</dd>
+                </div>
+                <div class="product__element">
+                  <dt>Коробка передач:</dt>
+                  <dd>8-ступенчатый автомат Tiptronic</dd>
+                </div>
+                <div class="product__element">
+                  <dt>Разгон 0-100 км/ч:</dt>
+                  <dd>От 4.5 секунд (в зависимости от версии)</dd>
+                </div>
+                <div class="product__element">
+                  <dt>Максимальная скорость:</dt>
+                  <dd>250 км/ч (ограничена электроникой)</dd>
+                </div>
+                <div class="product__element">
+                  <dt>Расход топлива:</dt>
+                  <dd>От 7.8 л/100 км (зависит от двигателя)</dd>
+                </div>
+                <div class="product__element">
+                  <dt>Оснащение:</dt>
+                  <dd>
+                    Пневматическая подвеска, Matrix LED фары, мультимедиа MMI
+                  </dd>
+                </div>
+                <div class="product__element">
+                  <dt>Безопасность:</dt>
+                  <dd>Адаптивный круиз-контроль, система ночного видения</dd>
+                </div>
+                <div class="product__element">
+                  <dt>Интерьер:</dt>
+                  <dd>
+                    Кожаная отделка, массажные сиденья, аудиосистема Bang &
+                    Olufsen
+                  </dd>
+                </div>
+                <div class="product__element">
+                  <dt>Дополнительно:</dt>
+                  <dd>
+                    Подогрев и вентиляция сидений, панорамная крыша, 4-зонный
+                    климат-контроль
+                  </dd>
+                </div>
+              </dl>
+              <p class="product__next">
+                Понравилось? <a href="#">Свяжитесь с нами!</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <nav class="footer__nav">
+          <a class="logo" href="index.html">
+            <img class="logo__img" src="images/logo.png" alt="logo" />
+          </a>
+          <a class="footer__phone" href="tel:+37362042038">+373 (62) 042 038</a>
+        </nav>
+      </div>
+    </footer>
+    <script src="js/main.js"></script>
+  </body>
+</html>
